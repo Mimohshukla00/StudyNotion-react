@@ -31,6 +31,7 @@ exports.resetPasswordToken = async (req, res) => {
         resetPasswordExpires: Date.now() + 5 * 60 * 1000,
       },
       { new: true }
+      
     );
     // create url
     const url = "https://localhost:3000/update-password/${token}";
