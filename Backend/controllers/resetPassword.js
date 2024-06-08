@@ -9,6 +9,7 @@ exports.resetPasswordToken = async (req, res) => {
   //generate token
   // create url
   // send email containing the url
+  
   // return response
   try {
     //get email from req.body
