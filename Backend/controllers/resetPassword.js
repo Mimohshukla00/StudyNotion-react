@@ -15,6 +15,7 @@ exports.resetPasswordToken = async (req, res) => {
     const { email } = req.body.email;
     //check if email exists in db
     const user = await User.findOne({ email });
+    console.log(user);
     if (!user) {
       return res
         .status(400)
@@ -31,7 +32,6 @@ exports.resetPasswordToken = async (req, res) => {
         resetPasswordExpires: Date.now() + 5 * 60 * 1000,
       },
       { new: true }
-      
     );
     // create url
     const url = "https://localhost:3000/update-password/${token}";
