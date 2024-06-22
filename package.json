@@ -1,0 +1,12 @@
+{
+  "name": "mega-backend",
+  "version": "1.0.0",
+  "description": "making backend of studynotion",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "Mimohshukla",
+  "license": "ISC"
+}
