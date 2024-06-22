@@ -1,4 +1,0 @@
-signup
-login
-signup verification otp>>send otp
-changepassword
